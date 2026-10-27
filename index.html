@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="so">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#0d5c40">
-<title>Natiijada Imtixaanka | Beder Primary and Intermediate School</title>
+<title>Examination Result | Beder Primary and Intermediate School</title>
 <link rel="icon" href="logo.jpg">
 <style>
 :root{--green:#0d5c40;--green2:#0a4632;--green3:#12805a;--navy:#0b2545;--navy2:#1a3a6b;--gold:#dba626;--ink:#1d2b25;--mute:#66756d;--line:#dfe8e3;--bg:#eaf2ee;--card:#fff;--tint:#f5faf7;--bad:#c0392b;--good:#1a8f5c;--warn:#d98a00;--blue:#1c6ea4}
@@ -128,7 +128,7 @@ td.g{width:60px;text-align:center}
 .scale{display:flex;flex-wrap:wrap;gap:6px}
 .scale span{font-size:12px;background:var(--tint);border:1px solid var(--line);border-radius:20px;padding:2px 10px;color:#35453d}
 .scale i{font-style:normal;display:inline-block;color:#fff;border-radius:6px;padding:0 6px;margin-right:5px;font-weight:800}
-.sign{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-top:30px;flex-wrap:wrap}
+.sign{display:flex;justify-content:flex-start;align-items:flex-end;gap:20px;margin-top:30px;flex-wrap:wrap}
 .sign .l{font-size:12px;color:var(--mute);display:flex;align-items:center;gap:6px}
 .sign .p{min-width:210px;text-align:center}
 .sign .p i{display:block;border-top:1.5px solid #2b3a33;margin-bottom:4px;height:34px}
@@ -141,6 +141,25 @@ td.g{width:60px;text-align:center}
 .foot strong{color:var(--navy)}
 button:focus-visible,input:focus-visible{outline:3px solid rgba(219,166,38,.7);outline-offset:2px}
 @media (max-width:640px){.titlebar,.body{padding-left:14px;padding-right:14px}.hero{grid-template-columns:1fr;text-align:center}.tiles{grid-template-columns:repeat(2,1fr)}.tiles .tile:last-child{grid-column:span 2}.ins{grid-template-columns:1fr}.prow{grid-template-columns:90px 1fr 112px}th,td{padding:8px 7px;font-size:14px}.bar{min-width:46px}.who{flex-direction:column;align-items:flex-start;padding:14px 16px}.search-box{padding:14px}}
+@media (max-width:640px){
+  .wrap{padding:10px 8px 28px}.paper{border-radius:18px}
+  .tw{overflow-x:visible}
+  table{table-layout:auto;width:100%;font-size:13px}
+  th{white-space:normal;font-size:10.5px;letter-spacing:.2px;padding:8px 4px;line-height:1.2;vertical-align:bottom}
+  td{padding:8px 4px;font-size:13px;word-break:break-word}
+  td.n{width:22px}td.m{width:auto;white-space:nowrap}td.g{width:40px}
+  .bar{min-width:0}
+  .tw td[style*="width:32%"]{width:24%!important}
+  .prow{grid-template-columns:78px 1fr auto;gap:8px;font-size:13px}
+  .dlt{font-size:13px}.dlt small{font-size:11px}
+  .tabs button{padding:6px 12px;font-size:13px}
+  .actions button{padding:10px 18px}
+}
+@media (max-width:380px){
+  th{font-size:9.5px}td,table{font-size:12px}
+  .tw td[style*="width:32%"]{display:none}
+  .prow{grid-template-columns:70px 1fr auto}
+}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}.gauge .fg,.bar i{transition:none}}
 @media print{
   body{background:#fff}.wrap{padding:0;max-width:none}.langs,.search-box,.actions,.tabs,.foot .sec-note,#msg,.secure{display:none!important}
@@ -185,7 +204,6 @@ button:focus-visible,input:focus-visible{outline:3px solid rgba(219,166,38,.7);o
 </defs>
 </svg>
 <div class="wrap">
-  <div class="langs"><button id="l-so" class="on" type="button"><svg class="ic"><use href="#i-globe"/></svg>Soomaali</button><button id="l-en" type="button"><svg class="ic"><use href="#i-globe"/></svg>English</button></div>
   <div class="paper">
     <div class="lh">
       <img id="lhimg" class="lh-img" src="letterhead.png" alt="Beder Primary and Intermediate School" style="display:none" onload="this.style.display='block';document.getElementById('lhtext').style.display='none'" onerror="this.remove()">
@@ -198,24 +216,24 @@ button:focus-visible,input:focus-visible{outline:3px solid rgba(219,166,38,.7);o
     <div class="titlebar">
       <div class="tb-l">
         <div class="tb-ico"><svg class="ic"><use href="#i-award"/></svg></div>
-        <div><h1 id="title">Natiijada Imtixaanka</h1><p id="yearline"></p></div>
+        <div><h1 id="title">Examination Result</h1><p id="yearline"></p></div>
       </div>
       <div class="badge"><svg class="ic"><use href="#i-cal"/></svg><span id="badgeYear"></span></div>
     </div>
     <div class="body">
       <form class="search-box" id="form" autocomplete="off">
-        <h2><svg class="ic"><use href="#i-search"/></svg><span id="t-h">Eeg natiijada ardayga</span></h2>
-        <p id="t-p">Geli lambarka Admission-ka ardayga si aad u aragto natiijada imtixaanka.</p>
-        <label for="adm" id="t-adm">Lambarka Admission-ka</label>
-        <div class="field"><svg class="ic"><use href="#i-id"/></svg><input id="adm" type="text" inputmode="text" autocapitalize="characters" placeholder="tusaale: A1023" required autofocus></div>
+        <h2><svg class="ic"><use href="#i-search"/></svg><span id="t-h">View a student's result</span></h2>
+        <p id="t-p">Enter the student's admission number to see the exam result.</p>
+        <label for="adm" id="t-adm">Admission number</label>
+        <div class="field"><svg class="ic"><use href="#i-id"/></svg><input id="adm" type="text" inputmode="text" autocapitalize="characters" placeholder="e.g. A1023" required autofocus></div>
         <div id="second" style="display:none">
           <label for="sec" id="t-sec"></label>
           <div class="field"><svg class="ic"><use href="#i-key"/></svg><input id="sec" type="tel" inputmode="numeric" maxlength="4"></div>
           <div class="hint" id="t-sech"></div>
         </div>
-        <button class="go" id="go" type="submit"><svg class="ic"><use href="#i-search"/></svg><span>Eeg Natiijada</span></button>
+        <button class="go" id="go" type="submit"><svg class="ic"><use href="#i-search"/></svg><span>View Result</span></button>
         <div class="msg" id="msg"></div>
-        <div class="secure"><svg class="ic"><use href="#i-lock"/></svg><span id="t-sec2">Xogta waa la sir-gareeyay (encrypted)</span></div>
+        <div class="secure"><svg class="ic"><use href="#i-lock"/></svg><span id="t-sec2">The data is encrypted</span></div>
       </form>
 
       <div id="result">
@@ -227,7 +245,6 @@ button:focus-visible,input:focus-visible{outline:3px solid rgba(219,166,38,.7);o
         <div class="scale" id="scale"></div>
         <div class="sign">
           <div class="l" id="issued"></div>
-          <div class="p"><i></i><b id="principal"></b><span class="l" id="ptitle" style="justify-content:center"></span></div>
         </div>
         <div class="actions">
           <button class="fill" type="button" id="print"></button>
@@ -242,23 +259,16 @@ button:focus-visible,input:focus-visible{outline:3px solid rgba(219,166,38,.7);o
 
 (function(){
 'use strict';
-var T={so:{title:'Natiijada Imtixaanka',h:'Eeg natiijada ardayga',p:'Geli lambarka Admission-ka ardayga si aad u aragto natiijada imtixaanka.',adm:'Lambarka Admission-ka',go:'Eeg Natiijada',wait:'Waa la raadinayaa...',
-  nf:'Natiijo lama helin. Hubi lambarka Admission-ka (iyo xogta kale ee la weydiiyay), kadibna isku day mar kale.',load:'Xogta natiijada lama furi karo hadda. Fadlan dib isku day.',old:'Natiijada lama soo gelin weli.',
-  phone:'4-ta lambar ee ugu dambeysa ee telefoonka waalidka',phoneh:'Tusaale: haddii telefoonku yahay 061 234 5678, qor 5678',year:'Sanadka dhalashada ardayga (4 lambar)',yearh:'Tusaale: 2014',
-  sname:'Magaca Ardayga',cls:'Fasalka',admno:'Lambarka Admission',yr:'Sannadka',subj:'Maaddada',mark:'Dhibcaha',grade:'Qiimo',total:'Wadarta',avg:'Celcelis',qual:'Qiimaynta',nsub:'Maaddooyin',rank:'Heerka',pos:'Kaalinta',of:'ka mid ah',
-  pass:'GUDBAY',failv:'MA GUDBIN',passnote:'Hambalyo! Waxaad gaartay heerka lagu gudbayo.',secure:'Xogta waa la sir-gareeyay: ardayga keliya ayaa arki kara natiijadiisa.',failnote:'Maaddooyinka hoose waxay u baahan yihiin dedaal dheeraad ah: ',pm:'Gudbay',
-  best:'Maaddada ugu xooggan',worst:'U baahan dedaal',progress:'Horumarka imtixaanada',change:'Isbeddel',scale:'Qiimaynta xarfaha',print:'Daabac',again:'Ardayga kale',issued:'Taariikhda la soo saaray: ',principal:'Maamulaha Dugsiga',
-  foot:'Natiijadan waxaa laga soo qaaday nidaamka maamulka dugsiga. Haddii aad ku aragto khalad, la xiriir maamulka dugsiga.',mean:'celcelis'},
- en:{title:'Examination Result',h:'View a student\'s result',p:'Enter the student\'s admission number to see the exam result.',adm:'Admission number',go:'View Result',wait:'Searching...',
+var T={en:{title:'Examination Result',h:'View a student\'s result',p:'Enter the student\'s admission number to see the exam result.',adm:'Admission number',go:'View Result',wait:'Searching...',
   nf:'No result found. Check the admission number (and the other detail asked), then try again.',load:'The results cannot be opened right now. Please try again.',old:'No results have been published yet.',
   phone:'Last 4 digits of the parent\'s phone number',phoneh:'Example: if the phone is 061 234 5678, enter 5678',year:'Student\'s year of birth (4 digits)',yearh:'Example: 2014',
   sname:'Student name',cls:'Class',admno:'Admission No.',yr:'Year',subj:'Subject',mark:'Marks',grade:'Grade',total:'Total',avg:'Average',qual:'Grade',nsub:'Subjects',rank:'Level',pos:'Position',of:'out of',
   pass:'PASSED',failv:'NOT PASSED',passnote:'Congratulations! You have reached the pass mark.',secure:'The data is encrypted: only the student can open his own result.',failnote:'These subjects need extra effort: ',pm:'Pass',
-  best:'Strongest subject',worst:'Needs most effort',progress:'Progress across exams',change:'Change',scale:'Grading scale',print:'Print',again:'Another student',issued:'Date issued: ',principal:'School Principal',
+  best:'Strongest subject',worst:'Needs most effort',progress:'Progress across exams',change:'Change',scale:'Grading scale',print:'Print',again:'Another student',issued:'Date issued: ',
   foot:'This result was taken from the school management system. If you see a mistake, please contact the school office.',mean:'average'}};
 var GR=[{min:90,g:'A',so:'Aad u fiican',en:'Excellent',c:'#0f7a4f'},{min:80,g:'B',so:'Fiican',en:'Very good',c:'#1a8f5c'},{min:70,g:'C',so:'Wanaagsan',en:'Good',c:'#1c6ea4'},{min:60,g:'D',so:'Dhexdhexaad',en:'Fair',c:'#8a6d00'},{min:50,g:'E',so:'Gudbay',en:'Pass',c:'#d98a00'},{min:0,g:'F',so:'Hoos u dhac',en:'Below pass',c:'#c0392b'}];
 var IC=function(n,c){return '<svg class="ic'+(c?' '+c:'')+'" aria-hidden="true"><use href="#i-'+n+'"/></svg>'};
-var lang=(function(){try{return localStorage.getItem('rs_lang')}catch(e){return null}})()||'so',DATA=null,CUR=null,tab=0;
+var lang='en',DATA=null,CUR=null,tab=0;
 var $=function(id){return document.getElementById(id)},enc=new TextEncoder(),dec=new TextDecoder();
 var t=function(k){return T[lang][k]};
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]})}
@@ -266,10 +276,9 @@ function b64(s){var b=atob(s),u=new Uint8Array(b.length);for(var i=0;i<b.length;
 function hex(buf){return Array.prototype.map.call(new Uint8Array(buf),function(x){return x.toString(16).padStart(2,'0')}).join('')}
 function scale(){var g=DATA&&DATA.meta&&DATA.meta.grades;return (g&&g.length?g:GR).slice().sort(function(a,b){return b.min-a.min})}
 function gradeOf(v){var s=scale();for(var i=0;i<s.length;i++)if(v>=s[i].min)return s[i];return s[s.length-1]}
-function gname(g){return lang==='en'?(g.en||g.so):(g.so||g.en)}
-function lbl(e){return lang==='en'&&e.label_en?e.label_en:e.label}
-function setLang(l){lang=l;try{localStorage.setItem('rs_lang',l)}catch(e){}
-  $('l-so').className=l==='so'?'on':'';$('l-en').className=l==='en'?'on':'';document.documentElement.lang=l;
+function gname(g){return g.en||g.so}
+function lbl(e){return e.label_en||e.label}
+function setLang(l){lang='en';document.documentElement.lang='en';
   $('title').textContent=t('title');$('t-h').textContent=t('h');$('t-p').textContent=t('p');$('t-adm').textContent=t('adm');$('t-sec2').textContent=t('secure');$('go').innerHTML=IC('search')+'<span>'+esc(t('go'))+'</span>';
   $('print').innerHTML=IC('print')+'<span>'+esc(t('print'))+'</span>';$('again').innerHTML=IC('back')+'<span>'+esc(t('again'))+'</span>';if(!DATA)$('foot').innerHTML='<strong>\u00A9 2026 MusApps</strong> All rights reserved.<br><span>'+esc(t('foot'))+'</span>';
   if(DATA){applyMeta();}
@@ -333,7 +342,7 @@ function render(){var m=DATA.meta,s=CUR,ex=s.exams,pm=m.pass_mark;if(tab>=ex.len
   $('progress').innerHTML=pr;
   $('t-scale').innerHTML=IC('award')+esc(t('scale'));
   $('scale').innerHTML=scale().map(function(g,i,arr){var hiV=i?arr[i-1].min-1:100;return '<span><i style="background:'+g.c+'">'+esc(g.g)+'</i>'+g.min+(hiV>g.min?'–'+hiV:'+')+' · '+esc(gname(g))+'</span>'}).join('');
-  $('issued').innerHTML=IC('cal')+esc(t('issued')+(m.generated||''));$('principal').textContent=m.principal||'';$('ptitle').textContent=t('principal');
+  $('issued').innerHTML=IC('cal')+esc(t('issued')+(m.generated||''));
   document.querySelectorAll('#tabs button').forEach(function(b){b.onclick=function(){tab=+b.dataset.i;render()}});
   requestAnimationFrame(function(){requestAnimationFrame(function(){
     document.querySelectorAll('.gauge .fg').forEach(function(c){c.setAttribute('stroke-dashoffset',c.dataset.off)});
@@ -352,7 +361,6 @@ $('form').addEventListener('submit',async function(ev){ev.preventDefault();msg()
   tab=0;$('form').style.display='none';$('result').style.display='block';render();window.scrollTo(0,0)});
 $('again').onclick=function(){CUR=null;$('result').style.display='none';$('form').style.display='block';$('adm').value='';$('sec').value='';$('adm').focus()};
 $('print').onclick=function(){window.print()};
-$('l-so').onclick=function(){setLang('so')};$('l-en').onclick=function(){setLang('en')};
 setLang(lang);load();
 })();
 </script>
